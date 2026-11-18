@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>The World Ledger — 17 November 2026</title>
+<style>
+@font-face{font-family:Ledger;src:url(assets/libre-baskerville.woff2) format('woff2');font-weight:400;font-style:normal;font-display:block}
+:root{--paper:#f5f0e4;--ink:#172d32;--red:#b43c28;--teal:#286b68;--muted:#536363;--line:#a1aaa0;--wash:#dde5db}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Open Sans',Arial,sans-serif}
+#paper{position:relative;width:1024px;height:1024px;padding:22px;background:var(--paper)}
+h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:Ledger,Georgia,serif;font-weight:700;letter-spacing:-.8px}p{font-size:13.4px;line-height:1.38}
+.kicker{font-size:10px;font-weight:800;letter-spacing:1.5px;color:var(--red);line-height:15px;text-transform:uppercase}
+.source{font-size:9px;line-height:12px;color:var(--muted);letter-spacing:.2px}
+.rule{border-top:2px solid var(--ink)}.section{position:absolute;left:22px;right:22px}.row{display:grid;gap:24px}
+.row>article{position:relative;min-width:0}.row>article+article:before{content:'';position:absolute;left:-13px;top:0;bottom:0;border-left:1px solid var(--line)}
+.row article>.source{position:absolute;bottom:0;left:0}.row article>p{margin-top:7px}.row article h2{margin-top:3px;font-size:25px;line-height:1.14}
+header{top:19px;height:108px;border-top:4px solid var(--ink);border-bottom:3px double var(--ink)}
+.topline{display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.8px;font-weight:700;padding-top:6px}
+.brand{display:flex;justify-content:center;align-items:center;gap:17px;height:62px}
+.brand h1{font-size:51px;line-height:1;letter-spacing:-2.3px}.brand svg{width:44px;height:44px}
+.dateline{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.3px;font-weight:700}
+.dateline strong{font-size:14px;letter-spacing:1.6px}
+.ticker{top:130px;height:34px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:11px}
+.ticker b{font-size:12px}.ticker .label{font-size:10px;letter-spacing:1px;font-weight:800}.ticker small{font-size:9px;color:var(--muted)}.down{color:var(--red)}.up{color:var(--teal)}
+.hero{top:178px;height:225px;grid-template-columns:616px 340px}
+.hero h2{font-size:43px!important;line-height:1.08!important;letter-spacing:-1.7px;margin:3px 0 9px!important}
+.hero .support h2{font-size:28px!important;line-height:1.1!important;letter-spacing:-.7px;margin-bottom:7px!important}
+.lead-bottom{display:grid;grid-template-columns:342px 258px;gap:16px;align-items:start}.lead-bottom p{font-size:13.4px;line-height:1.38}
+.bridge{height:92px;width:342px}.gulf{width:340px;height:60px;margin-bottom:4px}
+svg{display:block;overflow:visible}svg text{font-family:'Open Sans',Arial,sans-serif;fill:var(--ink)}
+.major{top:419px;height:214px;grid-template-columns:repeat(3,1fr);padding-top:8px}
+.major h2{font-size:25px!important}.metric{font-size:34px;font-weight:800;line-height:1.3;letter-spacing:-1.7px;margin-top:7px}.metric small{font-size:13px;letter-spacing:0;font-weight:600}
+.growth{font-size:12px;color:var(--teal);font-weight:700;margin:3px 0 4px}.revenue{width:100%;height:32px}
+.health{display:flex;justify-content:space-between;align-items:center;margin-top:9px}.health .metric{margin:0}.health .source{margin-top:4px}.health svg{width:52px;height:52px}
+.countries{display:flex;align-items:center;gap:8px;margin-top:12px}.countries span{border-bottom:3px solid var(--red);font-size:14px;font-weight:800;padding-bottom:6px}.countries i{font-style:normal;font-size:10px;color:var(--muted)}
+.features{top:647px;height:207px;grid-template-columns:repeat(4,1fr);padding-top:8px;gap:24px}
+.features h2{font-size:23px!important}.feature-graphic{height:48px;display:flex;align-items:center;gap:9px;margin-top:7px}.feature-graphic svg{width:54px;height:46px;flex-shrink:0}.feature-graphic strong{font-size:27px;letter-spacing:-1px;line-height:1}.feature-graphic small{display:block;font-size:9px;letter-spacing:.6px;margin-top:3px}.features p{font-size:12.4px;line-height:1.35;margin-top:6px!important}
+.briefs{top:866px;height:117px;grid-template-columns:repeat(3,1fr);padding-top:8px}.briefs h2{font-size:19px!important;letter-spacing:-.5px}.briefs p{font-size:12.2px;line-height:1.35;margin-top:6px!important}
+footer{top:990px;height:17px;border-top:2px solid var(--ink);padding-top:4px;display:flex;justify-content:space-between;font-size:8px;letter-spacing:.65px;font-weight:600}
+</style>
+<main id="paper">
+<header class="section" data-region="masthead">
+ <div class="topline"><span>AN INDEPENDENT RECORD OF ONE DAY</span><span>WORLD EDITION · NO. 171126</span></div>
+ <div class="brand">
+  <svg viewBox="0 0 50 50" aria-label="Original globe emblem"><circle cx="25" cy="25" r="22" fill="none" stroke="#172d32" stroke-width="1.6"/><ellipse cx="25" cy="25" rx="10" ry="22" fill="none" stroke="#172d32"/><path d="M3 25H47M7 13H43M7 37H43M25 3V47" stroke="#172d32" fill="none"/><circle cx="32" cy="17" r="3" fill="#b43c28"/></svg>
+  <h1>The World Ledger</h1>
+ </div>
+ <div class="dateline"><span>TWELVE STORIES · ONE PLANET</span><strong>TUESDAY, 17 NOVEMBER 2026</strong><span>THE DAY IN FOCUS</span></div>
+</header>
+<div class="section ticker" data-region="market strip">
+ <span class="label">MARKET WATCH</span>
+ <span>FTSE 100 <b class="down">▼ 1.6%</b> <small>late trading</small></span>
+ <span>NVIDIA <b class="up">▲ 4.8%</b> <small>after-hours</small></span>
+ <span>NVDA Q3 SALES <b>$115.8bn</b></span>
+ <span class="source">Guardian · BBC · NVIDIA</span>
+</div>
+<section class="section row hero" aria-label="The day's leads">
+ <article data-region="Crimean Bridge">
+  <div class="kicker">01 / Europe · Russia’s war in Ukraine</div>
+  <h2>Ukraine strikes<br>Crimea’s lifeline</h2>
+  <div class="lead-bottom">
+   <svg class="bridge" viewBox="0 0 342 92" role="img" aria-label="Schematic of the damaged road bridge over the Kerch Strait; some rail service resumed">
+    <rect width="342" height="92" fill="#dfe7df"/>
+    <path d="M0 51H342M0 73H342" stroke="#bdd0c5"/>
+    <path d="M0 28L92 28L109 39L134 43M211 43L232 28H342" fill="none" stroke="#172d32" stroke-width="6"/>
+    <path d="M145 47L173 63L196 51" fill="none" stroke="#b43c28" stroke-width="6"/>
+    <path d="M20 30V65M70 30V65M115 40V67M228 30V65M276 30V65M323 30V65" stroke="#172d32" stroke-width="5"/>
+    <path d="M136 34L154 16L174 31L193 16L211 35" fill="none" stroke="#b43c28" stroke-width="1.8"/>
+    <text x="8" y="14" font-size="9" font-weight="700">CRIMEA</text><text x="282" y="14" font-size="9" font-weight="700">RUSSIA</text>
+    <text x="97" y="84" font-size="9">KERCH STRAIT · SCHEMATIC</text>
+   </svg>
+   <p>A road span collapses in a Ukrainian attack on the Kerch crossing to occupied Crimea. Moscow vows repairs; Russia says some rail services resumed.</p>
+  </div>
+  <div class="source">BBC · The Guardian / 17 Nov</div>
+ </article>
+ <article class="support" data-region="Bahrain">
+  <div class="kicker">02 / Middle East · Escalation</div>
+  <h2>Iran targets Bahrain;<br>US strikes back</h2>
+  <svg class="gulf" viewBox="0 0 340 66" role="img" aria-label="Bahrain radar target and Qeshm Island US retaliation, schematic">
+   <rect width="340" height="66" fill="#dfe7df"/>
+   <path d="M9 51L44 36L72 40L91 22M194 0L213 18L267 19L307 31L340 23" fill="none" stroke="#8aa299" stroke-width="2"/>
+   <path d="M79 43Q160 4 263 43" stroke="#b43c28" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+   <circle cx="79" cy="43" r="4" fill="#b43c28"/><circle cx="263" cy="43" r="4" fill="#b43c28"/>
+   <text x="13" y="60" font-size="10" font-weight="700">BAHRAIN</text><text x="224" y="60" font-size="10" font-weight="700">QESHM, IRAN</text>
+   <text x="114" y="46" font-size="9">PERSIAN GULF</text><text x="10" y="13" font-size="8">SCHEMATIC</text>
+  </svg>
+  <p>Drones target a US radar site; US reports no injuries or damage. A US official says a Qeshm missile site was hit in retaliation.</p>
+  <div class="source">Associated Press / 17 Nov</div>
+ </article>
+</section>
+<section class="section row major rule" aria-label="Technology and public health">
+ <article data-region="Nvidia">
+  <div class="kicker">03 / Technology · Earnings</div>
+  <h2>Nvidia’s AI surge</h2>
+  <div class="metric">$115.8bn</div>
+  <div class="growth">Q3 FY2027 revenue · +103% year on year</div>
+  <svg class="revenue" viewBox="0 0 310 38" role="img" aria-label="Revenue composition: data center 107.6 billion dollars, edge computing 8.2 billion">
+   <rect x="0" y="0" width="288" height="14" fill="#286b68"/><rect x="288" y="0" width="22" height="14" fill="#ba8b46"/>
+   <text x="0" y="30" font-size="10" font-weight="700">Data center $107.6bn</text><text x="222" y="30" font-size="10">Other $8.2bn</text>
+  </svg>
+  <p>Board rules out Jensen Huang’s return.</p>
+  <div class="source">NVIDIA results · BBC / reported 17 Nov</div>
+ </article>
+ <article data-region="Ebola">
+  <div class="kicker">04 / Africa · WHO warning</div>
+  <h2>Congo’s Ebola<br>outbreak doubles</h2>
+  <div class="health">
+   <div><div class="metric">11,000+</div><div class="source">CASES REPORTED · DR CONGO</div></div>
+   <svg viewBox="0 0 60 60" aria-label="Virus illustration"><g fill="none" stroke="#b43c28" stroke-width="2"><circle cx="30" cy="30" r="18"/><path d="M30 4V12M30 48V56M4 30H12M48 30H56M11 11L18 18M42 42L49 49M11 49L18 42M42 18L49 11"/><circle cx="24" cy="25" r="3"/><circle cx="36" cy="35" r="4"/><path d="M22 37L28 35M35 21L38 25"/></g></svg>
+  </div>
+  <p>Cases more than double in three months, with over 5,400 deaths reported, WHO says.</p>
+  <div class="source">UN News reporting WHO / 17 Nov</div>
+ </article>
+ <article data-region="Measles">
+  <div class="kicker">05 / Americas · Vaccination</div>
+  <h2>Measles elimination<br>status lost</h2>
+  <div class="countries"><span>US</span><i>+</i><span>MEXICO</span><i>+</i><span>BOLIVIA</span></div>
+  <p>PAHO confirms sustained transmission in all three countries. It urges vaccination and stronger surveillance to stop outbreaks.</p>
+  <div class="source">PAHO · Associated Press / 17 Nov</div>
+ </article>
+</section>
+<section class="section row features rule" aria-label="Climate, environment and sport">
+ <article data-region="COP31">
+  <div class="kicker">06 / Antalya · COP31</div>
+  <h2>Polluters asked<br>to fund resilience</h2>
+  <div class="feature-graphic">
+   <svg viewBox="0 0 56 48" aria-label="Factory and climate finance"><path d="M4 43V23L17 29V18L31 27V11H42V43Z" fill="#286b68"/><path d="M31 5Q20 0 24 10M42 5Q49 0 51 8" fill="none" stroke="#8aa299" stroke-width="2"/><path d="M10 34H16M22 34H28M34 34H40" stroke="#f5f0e4" stroke-width="3"/></svg>
+   <div><strong>New levies</strong><small>PROPOSED, NOT ENACTED</small></div>
+  </div>
+  <p>UK, Kenya and partners back exploring small levies on polluting sectors to fund climate adaptation and resilience.</p>
+  <div class="source">Levies Task Force · Guardian / 17 Nov</div>
+ </article>
+ <article data-region="Earthshot">
+  <div class="kicker">07 / Mumbai · Earthshot</div>
+  <h2>Five solutions<br>win planet prizes</h2>
+  <div class="feature-graphic">
+   <svg viewBox="0 0 56 48" aria-label="Earthshot leaf illustration"><path d="M27 43V23M28 32C5 32 4 9 6 6C26 6 30 19 28 32M28 26C50 26 53 5 50 2C31 3 27 14 28 26" fill="#286b68" stroke="#286b68" stroke-width="2"/><path d="M9 10L26 29M47 6L29 23" stroke="#f5f0e4" fill="none"/></svg>
+   <div><strong>5 × £1m</strong><small>AWARDED TO WINNERS</small></div>
+  </div>
+  <p>Bhutan, Mahindra’s electric mobility, Niue Ocean Wide Trust, PFAS-Free France and Ørsted win in Mumbai.</p>
+  <div class="source">Earthshot Prize · BBC / 17 Nov</div>
+ </article>
+ <article data-region="Panguna">
+  <div class="kicker">08 / Bougainville · Pacific</div>
+  <h2>Funds to repair<br>Panguna’s scars</h2>
+  <div class="feature-graphic">
+   <svg viewBox="0 0 56 48" aria-label="Terraced mine illustration"><path d="M1 12H55L47 22H9Z" fill="#baa77e"/><path d="M9 25H47L39 34H17Z" fill="#8aa299"/><path d="M17 37H39L31 44H24Z" fill="#286b68"/></svg>
+   <div><strong>US$250m</strong><small>RIO TINTO COMMITMENT</small></div>
+  </div>
+  <p>Miner commits funds to begin addressing the legacy damage of the abandoned copper and gold mine.</p>
+  <div class="source">The Guardian / 17 Nov</div>
+ </article>
+ <article data-region="Woods">
+  <div class="kicker">09 / Bahamas · Golf</div>
+  <h2>Tiger Woods<br>sets a return</h2>
+  <div class="feature-graphic">
+   <svg viewBox="0 0 56 48" aria-label="Golf flag illustration"><ellipse cx="26" cy="39" rx="25" ry="7" fill="#d0dfcf"/><path d="M26 39V3L49 11L26 19" fill="#b43c28" stroke="#172d32" stroke-width="1.7"/><ellipse cx="26" cy="40" rx="4" ry="1.5" fill="#172d32"/><circle cx="10" cy="35" r="3" fill="#f5f0e4" stroke="#172d32"/></svg>
+   <div><strong>December</strong><small>RETURN ANNOUNCED TODAY</small></div>
+  </div>
+  <p>Woods joins the 20-player Hero World Challenge field, his first traditional ranking event since the 2024 Open.</p>
+  <div class="source">BBC Sport / 17 Nov</div>
+ </article>
+</section>
+<section class="section row briefs rule" aria-label="More from the day">
+ <article data-region="Gaza">
+  <div class="kicker">10 / Gaza · Humanitarian</div>
+  <h2>Winter floods deepen crisis</h2>
+  <p>UN agencies warn that rain and sewage are destroying makeshift shelters and food stocks, threatening displaced families.</p>
+  <div class="source">UN News / Tuesday briefing</div>
+ </article>
+ <article data-region="Amazon">
+  <div class="kicker">11 / Brazil · Amazon</div>
+  <h2>Awá encounter raises alarm</h2>
+  <p>Groups report about 20 Indigenous people emerging from isolation amid territorial threats. Monday encounter, reported Tuesday.</p>
+  <div class="source">The Guardian / 17 Nov</div>
+ </article>
+ <article data-region="Chemicals">
+  <div class="kicker">12 / Science · Global health</div>
+  <h2>Chemical risks before birth</h2>
+  <p>A new UNEP–WHO report finds broader health effects from hormone-disrupting chemicals, with exposure starting before birth.</p>
+  <div class="source">UN News · UNEP–WHO / 17 Nov</div>
+ </article>
+</section>
+<footer class="section" data-region="footer"><span>THE WORLD LEDGER · EVENTS & FIRST REPORTS OF 17 NOVEMBER 2026</span><span>ORIGINAL ILLUSTRATIONS · SOURCES BESIDE EACH STORY · 01</span></footer>
+</main>
+</html>

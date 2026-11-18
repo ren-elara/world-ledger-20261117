@@ -1,0 +1,10 @@
+node_modules/
+out/
+validation.json
+*.tar.gz
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json

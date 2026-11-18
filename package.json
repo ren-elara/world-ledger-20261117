@@ -1,0 +1,7 @@
+{
+  "name": "world-ledger-20261117",
+  "private": true,
+  "type": "commonjs",
+  "scripts": { "render": "node render.mjs", "verify": "node verify.mjs" },
+  "devDependencies": { "playwright": "1.65.1" }
+}
